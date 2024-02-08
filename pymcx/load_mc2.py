@@ -24,9 +24,9 @@ def loadmc2(path, dimension):
 	import numpy as np
 	from struct import unpack
 
-	f = open(path, 'rb')
-	data = f.read()
-	data = unpack('%df' % (len(data)/4), data)
-	data = np.asarray(data).reshape(dimension, order='F')
+	with open(path, 'rb') as f:
+		data = f.read()
+		data = unpack('%df' % (len(data)/4), data)
+		data = np.asarray(data).reshape(dimension, order='F')
 
 	return data
