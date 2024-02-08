@@ -14,9 +14,16 @@ Python package for [MCX](http://mcx.space/) .
 
 *All the functions can be used separately.*
 
+## How to install
+Run the setup.py using pip. Or alternatively, change your directory to the base of this project and run
+
+```
+python -m pip install .
+```
+
 ## How to use it
 
-The way the package work is as fallow.
+The way the package work is as follows.
 
 First use the `create()` function to generate a default,python dictionary, configuration parameter `cfg`. Then modify it to take in too account your simulation parameters. The dictionary fallow the same rules as the [Json](http://mcx.space/wiki/index.cgi?Doc/README) configuration file.
 
